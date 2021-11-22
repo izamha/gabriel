@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/calendar"
+        android:enabled="true"
+        android:icon="@drawable/ic_calendar_today_24"
+        android:title="@string/calendar"/>
+    <item
+        android:id="@+id/cart"
+        android:enabled="true"
+        android:icon="@drawable/ic_cart_24"
+        android:title="@string/cart"/>
+
+    <item
+        android:id="@+id/home"
+        android:enabled="true"
+        android:icon="@drawable/ic_home_24"
+        android:title="@string/home"/>
+
+    <item
+        android:id="@+id/discount"
+        android:enabled="true"
+        android:icon="@drawable/ic_add_task_24"
+        android:title="@string/cart"/>
+
+
+    <item
+        android:id="@+id/booking"
+        android:enabled="true"
+        android:icon="@drawable/ic_book_online_24"
+        android:title="@string/cart"/>
+
+</menu>

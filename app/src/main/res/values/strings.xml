@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">MY BOOKING</string>
+    <string name="favorite">Favorite</string>
+    <string name="search">Search</string>
+    <string name="more">More</string>
+    <string name="calendar">Calendar</string>
+    <string name="cart">Cart</string>
+    <string name="home">Home</string>
+    <string name="check_in">Check-in</string>
+    <string name="placeholder_date1">22/11/2021</string>
+    <string name="placeholder_date2">23/11/2021</string>
+    <string name="check_out">Check-out</string>
+    <string name="date_picker_one">Date Picker One</string>
+    <string name="total">Total: </string>
+    <string name="vat">VAT: </string>
+    <string name="book">Book</string>
+    <string name="cash_5">$5</string>
+    <string name="large_text">Implement the missing code, denoted by ellipses.
+        You may not modify the pre-existing code.
+Implement a function that, given an integer n, uses a specific method on it and returns the number of bits in its binary representation.
+Note: in this task and most of the following tasks you will be given a code snippet with some part of it replaced by the ellipsis.
+        Only this part is allowed to be changed.</string>
+</resources>
