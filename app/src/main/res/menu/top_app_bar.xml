@@ -3,9 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/favorite"
-        android:icon="@drawable/ic_favorite_24"
-        android:title="@string/favorite"
-        android:contentDescription="@string/favorite"
+        android:icon="@drawable/ic_refresh_24"
+        android:title="@string/refresh"
+        android:contentDescription="@string/refresh"
         app:showAsAction="ifRoom"/>
 
 <!--    <item-->
