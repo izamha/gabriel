@@ -38,4 +38,5 @@ Implement a function that, given an integer n, uses a specific method on it and 
     <string name="age">Student Age</string>
     <string name="name">Student Name</string>
     <string name="nbr_person2">2 Persons</string>
+    <string name="student_image">Student Image</string>
 </resources>

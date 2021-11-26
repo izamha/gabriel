@@ -7,34 +7,40 @@
     android:layout_height="match_parent"
     tools:context=".StudentDetailActivity">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardView"
-        android:layout_width="155dp"
-        android:layout_height="155dp"
-        android:layout_marginTop="32dp"
-        app:cardBackgroundColor="@color/white"
-        app:cardCornerRadius="250dp"
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:id="@+id/cardView"-->
+<!--        android:layout_width="155dp"-->
+<!--        android:layout_height="155dp"-->
+<!--        android:layout_marginTop="32dp"-->
+<!--        app:cardBackgroundColor="@color/white"-->
+<!--        app:cardCornerRadius="250dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:layout_width="150dp"-->
+<!--            android:layout_height="150dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            app:cardCornerRadius="250dp">-->
+
+<!--           -->
+<!--        </androidx.cardview.widget.CardView>-->
+
+<!--    </androidx.cardview.widget.CardView>-->
+
+
+    <ImageView
+        android:id="@+id/student_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/room_image"
+        android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_gravity="center"
-            app:cardCornerRadius="250dp">
-
-            <ImageView
-                android:id="@+id/student_image"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:scaleType="centerCrop"
-                tools:srcCompat="@drawable/profile1"
-                android:contentDescription="@string/room_image" />
-        </androidx.cardview.widget.CardView>
-
-    </androidx.cardview.widget.CardView>
-
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/profile1" />
 
     <TextView
         android:id="@+id/username"
@@ -46,7 +52,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.539"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+        app:layout_constraintTop_toBottomOf="@+id/student_image" />
 
     <View
         android:id="@+id/view2"
@@ -57,5 +63,44 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/username" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view2"
+        android:padding="18dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/large_text"
+                android:textSize="24sp"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/large_text"
+                android:textSize="24sp"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/large_text"
+                android:textSize="24sp"
+                android:padding="10dp"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

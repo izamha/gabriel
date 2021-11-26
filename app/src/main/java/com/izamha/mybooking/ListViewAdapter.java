@@ -12,6 +12,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import com.bumptech.glide.Glide;
 import com.izamha.mybooking.model.Student;
 
 import java.util.ArrayList;
@@ -40,9 +41,14 @@ public class ListViewAdapter extends ArrayAdapter<Student> {
         Student currentStudentPosition = getItem(position);
 
         // then according to the position of the view assign the desired image for the same
-        ImageView studentImage = currentItemView.findViewById(R.id.imageView);
+        ImageView image = currentItemView.findViewById(R.id.image);
         assert currentStudentPosition != null;
-        // studentImage.setImageResource(currentStudentPosition.getStudentImageId());
+
+        // Load in the student Image
+        Glide.with(getContext())
+                .load(currentStudentPosition.getStudentImageId())
+                .circleCrop()
+                .into(image);
 
         // then according to the position of the view assign the desired TextView 1 for the same
         TextView studentId = currentItemView.findViewById(R.id.student_id);
